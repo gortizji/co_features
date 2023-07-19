@@ -1,0 +1,15 @@
+name: iclr_co_features
+channels:
+  - nvidia
+  - pytorch
+  - defaults
+dependencies:
+  - cudatoolkit=11.3
+  - pytorch=1.10.2
+  - torchvision
+  - scikit-learn
+  - seaborn
+  - pip:
+    - hydra-core
+    - git+https://github.com/fra31/auto-attack
+    - tqdm

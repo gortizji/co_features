@@ -1,0 +1,24 @@
+seed: 42
+
+data_dir: "datasets/cifar10"
+num_workers: 2
+batch_size: 128
+batch_size_test: 1024
+
+epochs: 30
+lr_schedule: "cyclic"
+weight_decay: 5e-4
+momentum: 0.9
+lr_min: 0.0
+lr_max: 0.2
+
+epsilon: 8
+clip_delta: True
+clip_box: True
+
+pgd_iterations: 50
+pgd_restarts: 10
+pgd_alpha: 2
+pgd_epsilon: ${epsilon}
+
+beta: 8
